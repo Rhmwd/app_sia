@@ -4,7 +4,7 @@
  session_start();
  $username = $_POST['username'];
  $password = $_POST['password'];
- $query = "SELECT * FROM tbl_pengguna WHERE username='$username'";
+ $query = "SELECT * FROM tb_pengguna WHERE username='$username'";
  $result = $koneksi->query($query);
  $row = $result->fetch_assoc();
  if(mysqli_num_rows($result)>0){
