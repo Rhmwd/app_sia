@@ -4,6 +4,7 @@
  }else{
 $modul = $_GET['modul'];
  }
+ $hak_akses = isset($_SESSION['hak_akses']) ? $_SESSION['hak_akses'] : '';
  ?>
  <ul class="nav nav-pills flex-column ms-2">
  <li class="nav-item">
