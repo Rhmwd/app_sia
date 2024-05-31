@@ -1,3 +1,4 @@
+<form action="modul/akun/aksi_akun.php?act=insert" method="post">
 <div class="card mb-3">
      <div class="card-body">
  <form action="" method="post">
@@ -146,6 +147,7 @@
  </a>
  </td>
  </tr>
+ </form>
  </tbody>
  </table>
  </div>

@@ -1,39 +1,36 @@
+
 <div class="card">
-    
+    <div class="card-body">
+        <div class="row">
+            <div class="mb-3 col-md-6">
+                <label for="username" class="form-label">username</label>
+                <input type="text" class="from-control" name="username">
 </div>
-<div class="card-body">
-    <div class="row">
-        <div class="mb-3 col-md-6">
-            <label for="username" class="form-label">Username</label>
-            <input type="text" class="form-control" name="username">
-        </div>
-        <div class="mb-3 col-md-6">
-            <label for="password" class="form-label">Password</label>
-            <input type="text" class="form-control" name="password">
-        </div>
-    </div>
-    <div class="row">
-        <div class="mb-3 col-md-6">
-            <label for="level" class="form-label"> Level </label>
-            <input type="text" class="form-control" name="level">
-        </div>
-    </div>
+<div class="mb-3 col-md-6">
+    <label for="password" class="from-label">password</label>
+    <input type="text" class="from control" name="password">
+</div>
+</row>
+<div class="row">
+    <div class="mb-3 col-md-6">
+        <label for="level" class="from-lebel">level</label>
+        <input type="text" class="from control" name="level">
+</div>
+<div class="mb-3 col-md-6">
+<label for="email" class="from-lebel">email</label>
+<input type="text" class="from control" name="email">
+</div>
 </div>
 <hr>
-<div class=" mb-3 col-md-6 " >
-    <label for=" email " class=" form-label " > Email </label >
-    <input type=" text " class=" form-control " name=" email " >
-    </div>
-<div class=" row " >
-    <div class=" col text-end " > 
+<div class="row">
+    <div class="col text-end">
     <button class="btn btn-secondary" type="reset">Reset</button>
-<button class="btn btn-primary" type="submit">Simpan</button>
+ <button class="btn btn-primary" type="submit">Simpan</button>
  </div>
  </div>
  <div class="card">
  <div class="card-header">
  <h3>Data Pengguna</h3>
- </div
  <div class="card-body">
  <div class="table-responsive">
  <table class="table table-striped">
@@ -42,7 +39,7 @@
  <th>#</th>
  <th>Username</th>
  <th>Level</th>
-<th>Email</th>
+ <th>Email</th>
  <th><i class="bi bi-gear-fill"></i></th>
  </tr>
  </thead>
@@ -53,7 +50,8 @@
  <td>admin</td>
  <td>admin@gmail.com</td>
  <td>
- <a href="#editPengguna" class="text-decoration-none" databs-toggle="modal">
+ <a href="#editPengguna" class="text-decoration-none" data-
+bs-toggle="modal">
  <i class="bi bi-pencil-square text-success"></i>
  </a>
  <a href="" class="text-decoration-none">
@@ -61,27 +59,31 @@
  </a>
  </td>
  <!-- Modal -->
- <div class="modal fade" id="editPengguna" tabindex="-1" arialabelledby="editPenggunaLabel" aria-hidden="true">
+ <div class="modal fade" id="editPengguna" tabindex="-1" aria-
+labelledby="editPenggunaLabel" aria-hidden="true">
  <div class="modal-dialog">
  <div class="modal-content">
-<div class="modal-header">
+ <div class="modal-header">
  <h5 class="modal-title" id="editPenggunaLabel">Edit
 Pengguna</h5>
- <button type="button" class="btn-close" data-bsdismiss="modal" aria-label="Close"></button>
+ <button type="button" class="btn-close" data-bs-
+dismiss="modal" aria-label="Close"></button>
  </div>
  <div class="modal-body">
  <div class="mb-3">
- <label for="username" class="formlabel">Username</label>
+ <label for="username" class="form-
+label">Username</label>
  <input type="text" class="form-control"
 name="username" value="admin">
  </div>
  <div class="mb-3">
- <label for="password" class="formlabel">Password</label>
+ <label for="password" class="form-
+label">Password</label>
  <input type="text" class="form-control"
 name="password">
  <span class="form-text text-muted">Kosongkan jika
 tidak ingin mengganti password</span>
-</div>
+ </div>
  <div class="mb-3">
  <label for="level" class="form-label">Level</label>
  <select class="form-select" name="level">
@@ -95,9 +97,11 @@ tidak ingin mengganti password</span>
 value="admin@gmail.com">
  </div>
  </div>
-<div class="modal-footer">
- <button type="button" class="btn btn-secondary" databs-dismiss="modal">Close</button>
- <button type="button" class="btn btnprimary">Simpan</button>
+ <div class="modal-footer">
+ <button type="button" class="btn btn-secondary" data-
+bs-dismiss="modal">Close</button>
+ <button type="button" class="btn btn-
+primary">Simpan</button>
  </div>
  </div>
  </div>
@@ -107,12 +111,13 @@ value="admin@gmail.com">
  <td>2</td>
  <td>user</td>
  <td>user</td>
-<td>user@gmail.com</td>
+ <td>user@gmail.com</td>
  <td>
  <a href="#editPengguna" class="text-decoration-none"
 data-bs-toggle="modal">
- <i class="bi bi-pencil-square text-success"></i> </a>
- <a href="" class="text-decoration-none">
+ <i class="bi bi-pencil-square text-success"></i>
+ </a>
+<a href="" class="text-decoration-none">
  <i class="bi bi-trash text-danger"></i>
  </a>
  </td>
