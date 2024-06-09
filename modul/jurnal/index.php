@@ -91,11 +91,79 @@ rows="3"></textarea>
  <td>Debit</td>
  <td>-</td>
  <td>
- <a href="#editJurnal" class="text-decoration-none" data-bstoggle="modal">
-<i class="bi bi-pencil-square text-success"></i>
- </a>
- <a href="" class="text-decoration-none">
- <i class="bi bi-trash text-danger"></i>
+ <!-- Button trigger modal -->
+<i class="btn btn-bi bi-pencil-square text-success" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+<i class="bi bi-trash text-danger"></i>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">DATA JURNAL</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <div class="card mb-3">
+      <div class="card mb-3">
+<div class="card-body">
+ <form action="" method="post">
+ <div class="card mb-3">
+<div class="card-body">
+ <form action="" method="post">
+ <div class="row">
+<div class="mb-3 col-md-4">
+ <label for="invoice" class="form-label">Invoice</label>
+ <input type="text" class="form-control" name="invoice">
+ </div>
+ <div class="mb-3 col-md-4">
+ <label for="jenis-invoice" class="form-label">Jenis
+Invoice</label>
+ <select class="form-select" name="jenis-invoice">
+ <option value="pembayaran">Pembayaran</option>
+ <option value="penjualan">Penjualan</option>
+ <option value="pembelian">Pembelian</option>
+ </select>
+ </div>
+ <div class="mb-3 col-md-4">
+<label for="tanggal" class="form-label">Tanggal</label>
+ <input type="date" class="form-control" name="tanggal">
+ </div>
+ </div>
+ <div class="row">
+ <div class="mb-3 col-md-4">
+<label for="nama-akun" class="form-label">Nama Akun</label>
+ <select class="form-select" name="nama-akun">
+ <option value="1">Kas</option>
+ <option value="2">Piutang Usaha</option>
+ <option value="3">Perlengkapan</option>
+ <option value="4">Hutang Usaha</option>
+ <option value="5">Modal</option>
+ </select>
+ </div>
+ <div class="mb-3 col-md-4">
+ <label for="nominal" class="form-label">Nominal</label>
+ <input type="number" class="form-control" name="nominal">
+ </div>
+ <div class="mb-3 col-md-4">
+ <label for="type" class="form-label">Type</label>
+ <select class="form-select" name="type">
+ <option value="debit">Debit</option>
+ <option value="kredit">Kredit</option>
+ </select>
+ </div>
+ </div>
+ <div class="row">
+ <div class="mb-3 col">
+ <label for="keterangan" class="form-label">Keterangan</label>
+ <textarea class="form-control" name="keterangan"
+rows="3"></textarea>
+ </div>
+ </div>
+ <hr>
+ <div class="row">
+ <div class="col text-end">
+ <button class="btn btn-secondary" type="reset">Close</button>
+ <button class="btn btn-primary" type="submit">Simpan</button>
  </a>
  </td>
  <!-- Modal -->
@@ -165,13 +233,12 @@ name="keterangan" rows="3"> - </textarea>
  </div>
  </div>
  <div class="modal-footer">
- <button type="button" class="btn btn-secondary"
-data-bs-dismiss="modal">Close</button>
- <button type="button" class="btn btnprimary">Simpan</button>
- </div>
- </div>
- </div>
- </div>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
  </tr>
  <tr>
      <td>2</td>
@@ -183,11 +250,87 @@ data-bs-dismiss="modal">Close</button>
  <td>Kredit</td>
  <td>-</td>
  <td>
- <a href="#editJurnal" class="text-decoration-none" databs-toggle="modal">
- <i class="bi bi-pencil-square text-success"></i>
- </a>
- <a href="" class="text-decoration-none">
- <i class="bi bi-trash text-danger"></i>
+   <!-- Button trigger modal -->
+<i class="btn btn-bi bi-pencil-square text-success" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+<i class="bi bi-trash text-danger"></i>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">DATA JURNAL</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <div class="card mb-3">
+      <div class="card mb-3">
+<div class="card-body">
+ <form action="" method="post">
+ <div class="card mb-3">
+<div class="card-body">
+ <form action="" method="post">
+ <div class="row">
+<div class="mb-3 col-md-4">
+ <label for="invoice" class="form-label">Invoice</label>
+ <input type="text" class="form-control" name="invoice">
+ </div>
+ <div class="mb-3 col-md-4">
+ <label for="jenis-invoice" class="form-label">Jenis
+Invoice</label>
+ <select class="form-select" name="jenis-invoice">
+ <option value="pembayaran">Pembayaran</option>
+ <option value="penjualan">Penjualan</option>
+ <option value="pembelian">Pembelian</option>
+ </select>
+ </div>
+ <div class="mb-3 col-md-4">
+<label for="tanggal" class="form-label">Tanggal</label>
+ <input type="date" class="form-control" name="tanggal">
+ </div>
+ </div>
+ <div class="row">
+ <div class="mb-3 col-md-4">
+<label for="nama-akun" class="form-label">Nama Akun</label>
+ <select class="form-select" name="nama-akun">
+ <option value="1">Kas</option>
+ <option value="2">Piutang Usaha</option>
+ <option value="3">Perlengkapan</option>
+ <option value="4">Hutang Usaha</option>
+ <option value="5">Modal</option>
+ </select>
+ </div>
+ <div class="mb-3 col-md-4">
+ <label for="nominal" class="form-label">Nominal</label>
+ <input type="number" class="form-control" name="nominal">
+ </div>
+ <div class="mb-3 col-md-4">
+ <label for="type" class="form-label">Type</label>
+ <select class="form-select" name="type">
+ <option value="debit">Debit</option>
+ <option value="kredit">Kredit</option>
+ </select>
+ </div>
+ </div>
+ <div class="row">
+ <div class="mb-3 col">
+ <label for="keterangan" class="form-label">Keterangan</label>
+ <textarea class="form-control" name="keterangan"
+rows="3"></textarea>
+ </div>
+ </div>
+ <hr>
+ <div class="row">
+ <div class="col text-end">
+ <button class="btn btn-secondary" type="reset">Close</button>
+ <button class="btn btn-primary" type="submit">Simpan</button>
+</div>
+ </div>
+ </form>
+ </div>
+</div>
+    </div>
+  </div>
+</div>
  </a>
  </td>
  </tr>
