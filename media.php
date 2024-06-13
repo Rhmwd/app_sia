@@ -4,7 +4,7 @@
  }else{
  if($_GET['modul']=="transaksi"){
  include_once('modul/transaksi/index.php');
- }elseif($_GET['modul']=="akun"){
+include_once('modul/akun/index.php');
  include_once('modul/akun/index.php');
  }elseif($_GET['modul']=="pembelian"){
  include_once('modul/pembelian/index.php');
@@ -22,8 +22,8 @@
  include_once('modul/pengguna/index.php');
  }elseif($_GET['modul']=="jurnal"){
  include_once('modul/jurnal/index.php');
- }elseif($_GET['modul']=="profile"){
- include_once('modul/profile/index.php');
+ }elseif($_GET['modul']=="profile.php"){
+ include_once('modul/profile.php/index.php');
  }else{
  ?>
  <div class="alert alert-info">
