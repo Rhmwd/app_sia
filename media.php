@@ -4,7 +4,7 @@
  }else{
  if($_GET['modul']=="transaksi"){
  include_once('modul/transaksi/index.php');
-include_once('modul/akun/index.php');
+ }elseif($_GET['modul']=="akun"){
  include_once('modul/akun/index.php');
  }elseif($_GET['modul']=="pembelian"){
  include_once('modul/pembelian/index.php');
