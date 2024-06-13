@@ -114,7 +114,7 @@ saldo</label>
  </a>
  </td>
  </tr>
-. <td>3</td>
+<td>3</td>
  <td>Perlengkapan</td>
  <td>Aset</td>
  <td>Debit</td>
@@ -160,3 +160,4 @@ saldo</label>
  </div>
  </div>
  </div>
+
