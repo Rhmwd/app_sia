@@ -103,14 +103,91 @@
                         <td>Rp. 30.000.000,-</td>
                         <td>Penjualan 3 unit laptop acer</td>
                         <td>
-                            <a href="#editPenjualan" class="text-decoration-none" data-bstoggle="modal">
-                                <i class="bi bi-pencil-square text-success"></i>
-                            </a>
+<!-- Button trigger modal -->
+                        <button type="button" class="btn btn-bi bi-pencil-square text-success" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
+<a href="" class="text-decoration-none">
+<i class="bi bi-trash text-danger"></i>
+</a>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Data Penjualan</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <div class="card mb-3">
+    <div class="card-body">
+        <form action=""method="post">
+            <div class="row mb-3">
+                <div class="col-md-4">
+                <label for="invoice" class="form-label">Invoice</label>
+                <input type="text" class="form-control" name="invoice">
+            </div>
  
-                            <a href="" class="text-decoration-none">
-                                <i class="bi bi-trash text-danger"></i>
-                            </a>
-                        </td>
+            <div class="col-md-4">
+                <label for="tanggal" class="form-label">Tanggal</label>
+                <input type="date" class="form-control" name="tanggal">
+            </div>
+ 
+            <div class="col-md-4">
+                <label for="barang" class="form-label">Barang</label>
+                <select name="barang" class="form-select">
+                    <option value="1">Laptop Acer</option>
+                    <option value="2">Komputer (PC)</option>
+                </select>
+            </div>
+        </div>
+ 
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <label for="pelanggan" class="form-label">Pelanggan</label>
+                <select name="pelanggan" class="form-select">
+                    <option value="1">PT Sejahtera</option>
+                    <option value="2">CV Maju Bersama</option>
+                </select>
+            </div>
+ 
+            <div class="col-md-2">
+                <label for="jumlah" class="form-label">Jumlah</label>
+                <input type="number" class="form-control" name="jumlah">
+            </div>
+ 
+            <div class="col-md-3">
+                <label for="harga" class="form-label">Harga</label>
+                <div class="input-group">
+                    <span class="input-group-text">Rp.</span>
+                    <input type="number" class="form-control" name="harga">
+                </div>
+            </div>
+ 
+            <div class="col-md-3">
+                <label for="total" class="form-label">Total</label>
+                <div class="input-group">
+                    <span class="input-group-text">Rp.</span>
+                    <input type="number" class="form-control" name="total" disabled>
+                </div>
+            </div>
+        </div>
+ 
+        <div class="row">
+            <div class="col-md-12">
+                <label for="keterangan" class="form-label">Keterangan</label>
+                <textarea name="keterangan" class="form-control"></textarea>
+            </div>
+        </div>
+ 
+        <hr class="text-secondary">
+        <div class="text-end">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Simpan</button>
+      </div>
+    </div>
+  </div>
+</div>        
 
     <!-- Modal -->
     <div class="modal fade" id="editPenjualan" tabindex="-1"aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -203,14 +280,34 @@
                     <td>Rp. 80.000.000,-</td>
                     <td>Penjualan 10 unit komputer komplit</td>
                     <td>
-                        <a href="" class="text-decoration-none">
-                            <i class="bi bi-pencil-square text-success"></i>
-                        </a>
-                        <a href="" class="text-decoration-none">
-                            <i class="bi bi-trash text-danger"></i>
-                        </a>
-                    </td>
-                </tr>
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-bi bi-pencil-square text-success" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
+<a href="" class="text-decoration-none">
+<i class="bi bi-trash text-danger"></i>
+</a>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Data Penjualan</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Simpan</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+    </form>
+</div>
+</div>
  </tbody>
  </table>
  </div>
