@@ -1,3 +1,4 @@
+<form action="modul/suplier/aksi_suplier.php?act=insert" method="post">
 <div class="card mb-3">
 <div class="card-body">
  <form action="" method="post">
@@ -60,13 +61,14 @@ Suplier</label>
  <!-- Button trigger modal -->
  <i class="btn btn-bi bi-pencil-square text-success" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
  <i class="bi bi-trash text-danger"></i>
+</a>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Data Suplier</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Data Supplier</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -96,8 +98,14 @@ Suplier</label>
  </div>
  <hr class="text-secondary">
  <div class="text-end">
- <button type="reset" class="btn btn-secondary">Reset</button>
- <button type="submit" class="btn btn-primary">Simpan</button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Simpan</button>
+      </div>
+    </div>
+  </div>
+</div>
       
  <!-- Modal -->
  <div class="modal fade" id="editPelanggan" tabindex="-1" arialabelledby="exampleModalLabel" aria-hidden="true">
@@ -154,7 +162,7 @@ name="email" value="sejahtera@example.com">
 <!-- Button trigger modal -->
 <i class="btn btn-bi bi-pencil-square text-success" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
  <i class="bi bi-trash text-danger"></i>
-
+</a>
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -190,9 +198,15 @@ Suplier</label>
  </div>
  <hr class="text-secondary">
  <div class="text-end">
- <button type="reset" class="btn btn-secondary">Reset</button>
- <button type="submit" class="btn btn-primary">Simpan</button>
- </a>
+ <div class="modal-footer">
+ <button type="button" class="btn btn-secondary" databs-dismiss="modal">Close</button>
+ <button type="submit" class="btn btnprimary">Simpan</button>
+</a>
+ </div>
+ </div>
+ </div>
+ </form>
+ </div>
  </td>
  </tr>
  </tbody>
