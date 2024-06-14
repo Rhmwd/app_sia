@@ -32,14 +32,14 @@ Suplier</label>
 </div>
 <div class="card">
  <div class="card-header">
- <h3>Data Supplier</h3>
+ <h3>Data Suplier</h3>
  </div>
  <div class="card-body">
  <div class="table-responsive">
  <table class="table table-striped">
  <thead>
  <tr>
- <th>#</th>
+ <th>No</th>
  <th>Nama Supplier</th>
  <th>Alamat</th>
  <th>Telepon</th>
@@ -57,13 +57,48 @@ Suplier</label>
  <td>081234567890</td>
  <td>sejahtera@example.com</td>
  <td>
- <a href="#editPelanggan" class="text-decoration-none" data-bstoggle="modal">
- <i class="bi bi-pencil-square text-success"></i>
- </a>
- <a href="" class="text-decoration-none">
+ <!-- Button trigger modal -->
+ <i class="btn btn-bi bi-pencil-square text-success" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
  <i class="bi bi-trash text-danger"></i>
- </a>
- </td>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Data Suplier</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <div class="card mb-3">
+<div class="card-body">
+ <form action="" method="post">
+ <div class="row mb-3">
+ <div class="col-md-6">
+ <label for="nama_pelanggan" class="form-label">Nama
+Suplier</label>
+ <input type="text" class="form-control" name="nama_pelanggan">
+ </div>
+ <div class="col-md-6">
+ <label for="alamat" class="form-label">Alamat</label>
+ <input type="text" class="form-control" name="alamat">
+ </div>
+ </div>
+ <div class="row mb-3">
+ <div class="col-md-6">
+ <label for="telepon" class="form-label">Telepon</label>
+ <input type="number" class="form-control" name="telepon">
+ </div>
+ <div class="col-md-6">
+ <label for="email" class="form-label">Email</label>
+ <input type="text" class="form-control" name="email">
+ </div>
+ </div>
+ <hr class="text-secondary">
+ <div class="text-end">
+ <button type="reset" class="btn btn-secondary">Reset</button>
+ <button type="submit" class="btn btn-primary">Simpan</button>
+      
  <!-- Modal -->
  <div class="modal fade" id="editPelanggan" tabindex="-1" arialabelledby="exampleModalLabel" aria-hidden="true">
  <form action="" method="post">
@@ -116,12 +151,47 @@ name="email" value="sejahtera@example.com">
 <td>085678901234</td>
  <td>maju@example.com</td>
  <td>
- <a href="#editPelanggan" class="text-decoration-none"
-data-bs-toggle="modal">
- <i class="bi bi-pencil-square text-success"></i>
- </a>
- <a href="" class="text-decoration-none">
+<!-- Button trigger modal -->
+<i class="btn btn-bi bi-pencil-square text-success" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
  <i class="bi bi-trash text-danger"></i>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Data Suplier</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <div class="card mb-3">
+<div class="card-body">
+ <form action="" method="post">
+ <div class="row mb-3">
+ <div class="col-md-6">
+ <label for="nama_pelanggan" class="form-label">Nama
+Suplier</label>
+ <input type="text" class="form-control" name="nama_pelanggan">
+ </div>
+ <div class="col-md-6">
+ <label for="alamat" class="form-label">Alamat</label>
+ <input type="text" class="form-control" name="alamat">
+ </div>
+ </div>
+ <div class="row mb-3">
+ <div class="col-md-6">
+ <label for="telepon" class="form-label">Telepon</label>
+ <input type="number" class="form-control" name="telepon">
+ </div>
+ <div class="col-md-6">
+ <label for="email" class="form-label">Email</label>
+ <input type="text" class="form-control" name="email">
+ </div>
+ </div>
+ <hr class="text-secondary">
+ <div class="text-end">
+ <button type="reset" class="btn btn-secondary">Reset</button>
+ <button type="submit" class="btn btn-primary">Simpan</button>
  </a>
  </td>
  </tr>
