@@ -61,7 +61,7 @@
  <table class="table table-striped">
  <thead>
  <tr>
- <th>#</th>
+ <th>No</th>
  <th>Invoice</th>
  <th>Tanggal</th>
  <th>Suplier</th>
@@ -83,13 +83,70 @@
  <td>Rp. 15.000.000,-</td>
  <td>Pembelian perlengkapan maintenance</td>
  <td>
- <a href="#editPembelian" class="text-decoration-none" data-bstoggle="modal">
- <i class="bi bi-pencil-square text-success"></i>
- </a>
- <a href="" class="text-decoration-none">
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-bi bi-pencil-square text-success" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
+<a href="" class="text-decoration-none">
  <i class="bi bi-trash text-danger"></i>
- </a>
- </td>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Data Pembelian</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <div class="row mb-3">
+ <div class="col-md-4">
+ <label for="invoice" class="form-label">Invoice</label>
+ <input type="text" class="form-control" name="invoice">
+ </div>
+ <div class="col-md-4">
+ <label for="tanggal" class="form-label">Tanggal</label>
+ <input type="date" class="form-control" name="tanggal">
+ </div>
+ <div class="col-md-4">
+ <label for="suplier" class="form-label">Suplier</label>
+ <select name="suplier" class="form-select">
+ <option value="1">PT Suplier Jaya</option>
+ <option value="2">CV Maju Jaya</option>
+ </select>
+ </div>
+ </div>
+ <div class="row mb-3">
+ <div class="col-md-4">
+ <label for="jumlah" class="form-label">Jumlah</label>
+ <input type="number" class="form-control" name="jumlah">
+ </div>
+ <div class="col-md-4">
+ <label for="harga" class="form-label">Harga</label>
+ <div class="input-group">
+ <span class="input-group-text">Rp.</span>
+ <input type="number" class="form-control" name="harga">
+ </div>
+ </div>
+ <div class="col-md-4">
+ <label for="total" class="form-label">Total</label>
+ <div class="input-group">
+ <span class="input-group-text">Rp.</span>
+ <input type="number" class="form-control" name="total" disabled>
+</div>
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-md-12">
+ <label for="keterangan" class="form-label">Keterangan</label>
+ <textarea name="keterangan" class="form-control"></textarea>
+ </div>
+ </div>
+ <hr class="text-secondary">
+ <div class="text-end">
+ <button type="reset" class="btn btn-secondary">Reset</button>
+ <button type="submit" class="btn btn-primary">Simpan</button>
+ </div>
+ </form>
+ </div>
+</div>
  <!-- Modal -->
  <div class="modal fade" id="editPembelian" tabindex="-1" arialabelledby="exampleModalLabel" aria-hidden="true">
     <form action="" method="post">
@@ -164,11 +221,69 @@ data-bs-dismiss="modal">Close</button>
  <td>Rp. 50.000.000,-</td>
  <td>Pengadaan 5 unit laptop ASUS</td>
  <td>
-     <a href="" class="text-decoration-none">
- <i class="bi bi-pencil-square text-success"></i>
- </a>
- <a href="" class="text-decoration-none">
+   <!-- Button trigger modal -->
+<button type="button" class="btn btn-bi bi-pencil-square text-success" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
+<a href="" class="text-decoration-none">
  <i class="bi bi-trash text-danger"></i>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Data Pembelian</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <div class="row mb-3">
+ <div class="col-md-4">
+ <label for="invoice" class="form-label">Invoice</label>
+ <input type="text" class="form-control" name="invoice">
+ </div>
+ <div class="col-md-4">
+ <label for="tanggal" class="form-label">Tanggal</label>
+ <input type="date" class="form-control" name="tanggal">
+ </div>
+ <div class="col-md-4">
+ <label for="suplier" class="form-label">Suplier</label>
+ <select name="suplier" class="form-select">
+ <option value="1">PT Suplier Jaya</option>
+ <option value="2">CV Maju Jaya</option>
+ </select>
+ </div>
+ </div>
+ <div class="row mb-3">
+ <div class="col-md-4">
+ <label for="jumlah" class="form-label">Jumlah</label>
+ <input type="number" class="form-control" name="jumlah">
+ </div>
+ <div class="col-md-4">
+ <label for="harga" class="form-label">Harga</label>
+ <div class="input-group">
+ <span class="input-group-text">Rp.</span>
+ <input type="number" class="form-control" name="harga">
+ </div>
+ </div>
+ <div class="col-md-4">
+ <label for="total" class="form-label">Total</label>
+ <div class="input-group">
+ <span class="input-group-text">Rp.</span>
+ <input type="number" class="form-control" name="total" disabled>
+</div>
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-md-12">
+ <label for="keterangan" class="form-label">Keterangan</label>
+ <textarea name="keterangan" class="form-control"></textarea>
+ </div>
+ </div>
+ <hr class="text-secondary">
+ <div class="text-end">
+ <button type="reset" class="btn btn-secondary">Reset</button>
+ <button type="submit" class="btn btn-primary">Simpan</button>
+ </div>
+ </form>
+ </div>
  </a>
  </td>
  </tr>
