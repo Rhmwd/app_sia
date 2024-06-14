@@ -36,7 +36,7 @@
  <table class="table table-striped">
  <thead>
  <tr>
- <th>#</th>
+ <th>No</th>
  <th>Username</th>
  <th>Level</th>
  <th>Email</th>
@@ -50,14 +50,47 @@
  <td>admin</td>
  <td>admin@gmail.com</td>
  <td>
- <a href="#editPengguna" class="text-decoration-none" data-
-bs-toggle="modal">
- <i class="bi bi-pencil-square text-success"></i>
- </a>
- <a href="" class="text-decoration-none">
- <i class="bi bi-trash text-danger"></i>
- </a>
- </td>
+ <!-- Button trigger modal -->
+<i class="btn btn-bi bi-pencil-square text-success" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+<i class="bi bi-trash text-danger"></i>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="mb-3 col-md-6">
+                <label for="username" class="form-label">username</label>
+                <input type="text" class="from-control" name="username">
+</div>
+<div class="mb-3 col-md-6">
+    <label for="password" class="from-label">password</label>
+    <input type="text" class="from control" name="password">
+</div>
+</row>
+<div class="row">
+    <div class="mb-3 col-md-6">
+        <label for="level" class="from-lebel">level</label>
+        <input type="text" class="from control" name="level">
+</div>
+<div class="mb-3 col-md-6">
+<label for="email" class="from-lebel">email</label>
+<input type="text" class="from control" name="email">
+</div>
+</div>
+<hr>
+<div class="row">
+    <div class="col text-end">
+    <button class="btn btn-secondary" type="reset">Reset</button>
+ <button class="btn btn-primary" type="submit">Simpan</button>
+ </div>
+
  <!-- Modal -->
  <div class="modal fade" id="editPengguna" tabindex="-1" aria-
 labelledby="editPenggunaLabel" aria-hidden="true">
@@ -113,20 +146,43 @@ primary">Simpan</button>
  <td>user</td>
  <td>user@gmail.com</td>
  <td>
- <a href="#editPengguna" class="text-decoration-none"
-data-bs-toggle="modal">
- <i class="bi bi-pencil-square text-success"></i>
- </a>
-<a href="" class="text-decoration-none">
- <i class="bi bi-trash text-danger"></i>
- </a>
- </td>
- </tr>
- </tbody>
- </table>
- </div>
- </div>
- </div>
- </div>
- </div>
+<!-- Button trigger modal -->
+<i class="btn btn-bi bi-pencil-square text-success" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+<i class="bi bi-trash text-danger"></i>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="mb-3 col-md-6">
+                <label for="username" class="form-label">username</label>
+                <input type="text" class="from-control" name="username">
+</div>
+<div class="mb-3 col-md-6">
+    <label for="password" class="from-label">password</label>
+    <input type="text" class="from control" name="password">
+</div>
+</row>
+<div class="row">
+    <div class="mb-3 col-md-6">
+        <label for="level" class="from-lebel">level</label>
+        <input type="text" class="from control" name="level">
+</div>
+<div class="mb-3 col-md-6">
+<label for="email" class="from-lebel">email</label>
+<input type="text" class="from control" name="email">
+</div>
+</div>
+<hr>
+<div class="row">
+    <div class="col text-end">
+    <button class="btn btn-secondary" type="reset">Reset</button>
+ <button class="btn btn-primary" type="submit">Simpan</button>
  </div>
