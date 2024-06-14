@@ -27,39 +27,12 @@
     ?>
     <form action="" method="post">
         <div class="card-body">
-            <div class="row">
-                <div class="mb-3 col-md-6">
-                    <label for="nama_barang" class="form-label"> Nama barang</label>
-                    <input type="text" class="form-control" name="nama_barang">
-                </div>
-                <div class="mb-3 col-md-6">
-                    <label for="harga_beli" class="form-label"> Harga beli</label>
-                    <input type="number" class="form-control" name="harga_beli">
-                </div>
-            </div>
-            <div class="row">
-                <div class="mb-3 col-md-6">
-                    <label for="harga_jual" class="form-label">Harga jual</label>
-                    <input type="number" class="form-control" name="harga_jual">
-                </div>
-                <div class="mb-3 col-md-6">
-                    <label for="stok" class="form-label"> Stok</label>
-                    <input type="number" class="form-control" name="stok">
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="text-end">
-            <button type="submit" class="btn btn-primary">Simpan</button>
-        </div>
-    </form>
-</div>
 <div class="card mb-3">
   <div class="card-body">
     <form action="simpan_barang.php" method="post">
       <div class="row">
         <div class="mb-3 col-md-6">
-          <label class="form-label" for="nama_barang">Barang</label>
+          <label class="form-label" for="nama_barang">Nama Barang</label>
           <input type="text" class="form-control" name="nama_barang">
         </div>
         <div class="mb-3 col-md-6">
@@ -94,7 +67,7 @@
       <table class="table table-striped">
         <thead>
           <tr>
-            <th>#</th>
+            <th>No</th>
             <th>Barang</th>
             <th>Harga beli</th>
             <th>Harga jual</th>
@@ -110,14 +83,49 @@
             <td>Rp. 12.000.000</td>
             <td>5</td>
             <td>
-              <a href="#editBarang" class="text-decoration-none" data-bs-toggle="modal">
-                <i class="bi bi-pencil-square text-success"></i>
-              </a>
-              <a href="" class="text-decoration-none">
-                <i class="bi bi-trash text-danger"></i>
-              </a>
-            </td>
-          </tr>
+ <!-- Button trigger modal -->
+<button type="button" class="btn btn-bi bi-pencil-square text-success" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
+<a href="" class="text-decoration-none">
+ <i class="bi bi-trash text-danger"></i>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Data Barang</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <div class="card mb-3">
+  <div class="card-body">
+    <form action="simpan_barang.php" method="post">
+      <div class="row">
+        <div class="mb-3 col-md-6">
+          <label class="form-label" for="nama_barang">Nama Barang</label>
+          <input type="text" class="form-control" name="nama_barang">
+        </div>
+        <div class="mb-3 col-md-6">
+          <label class="form-label" for="harga_beli">Harga beli</label>
+          <input type="number" class="form-control" name="harga_beli">
+        </div>
+      </div>
+      <div class="row">
+        <div class="mb-3 col-md-6">
+          <label class="form-label" for="harga_jual">Harga jual</label>
+          <input type="number" class="form-control" name="harga_jual">
+        </div>
+        <div class="mb-3 col-md-6">
+          <label class="form-label" for="stok">Stok</label>
+          <input type="number" class="form-control" name="stok">
+        </div>
+      </div>
+      <div class="col text-end">
+        <button class="btn btn-secondary" type="reset">Reset</button>
+        <button class="btn btn-primary" type="submit">Simpan</button>
+      </div>
+    </form>
+  </div>
+</div>
           <tr>
             <td>2</td>
             <td>Monitor Samsung</td>
@@ -125,17 +133,47 @@
             <td>Rp. 6.000.000</td>
             <td>10</td>
             <td>
-              <a href="#editBarang" class="text-decoration-none" data-bs-toggle="modal">
-                <i class="bi bi-pencil-square text-success"></i>
-              </a>
-              <a href="" class="text-decoration-none">
-                <i class="bi bi-trash text-danger"></i>
-              </a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+              <!-- Button trigger modal -->
+<button type="button" class="btn btn-bi bi-pencil-square text-success" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
+<a href="" class="text-decoration-none">
+ <i class="bi bi-trash text-danger"></i>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Data Barang</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <div class="card mb-3">
+  <div class="card-body">
+    <form action="simpan_barang.php" method="post">
+      <div class="row">
+        <div class="mb-3 col-md-6">
+          <label class="form-label" for="nama_barang">Nama Barang</label>
+          <input type="text" class="form-control" name="nama_barang">
+        </div>
+        <div class="mb-3 col-md-6">
+          <label class="form-label" for="harga_beli">Harga beli</label>
+          <input type="number" class="form-control" name="harga_beli">
+        </div>
+      </div>
+      <div class="row">
+        <div class="mb-3 col-md-6">
+          <label class="form-label" for="harga_jual">Harga jual</label>
+          <input type="number" class="form-control" name="harga_jual">
+        </div>
+        <div class="mb-3 col-md-6">
+          <label class="form-label" for="stok">Stok</label>
+          <input type="number" class="form-control" name="stok">
+        </div>
+      </div>
+      <div class="col text-end">
+        <button class="btn btn-secondary" type="reset">Reset</button>
+        <button class="btn btn-primary" type="submit">Simpan</button>
+      </div>
+    </form>
   </div>
 </div>
 
