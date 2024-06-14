@@ -92,22 +92,23 @@ rows="3"></textarea>
  <td>-</td>
  <td>
  <!-- Button trigger modal -->
-<i class="btn btn-bi bi-pencil-square text-success" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+ <a href="#editAkun" class="text-decoration-none" data-bstoggle="modal">
+<button type="button" class="btn btn-bi bi-pencil-square text-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+</button>
+<a href="" class="text-decoration-none">
 <i class="bi bi-trash text-danger"></i>
+</a>
+
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">DATA JURNAL</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Data Jurnal</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
       <div class="card mb-3">
-      <div class="card mb-3">
-<div class="card-body">
- <form action="" method="post">
- <div class="card mb-3">
 <div class="card-body">
  <form action="" method="post">
  <div class="row">
@@ -162,10 +163,14 @@ rows="3"></textarea>
  <hr>
  <div class="row">
  <div class="col text-end">
- <button class="btn btn-secondary" type="reset">Close</button>
- <button class="btn btn-primary" type="submit">Simpan</button>
- </a>
- </td>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Simpan</button>
+      </div>
+    </div>
+  </div>
+</div>
  <!-- Modal -->
  <div class="modal fade" id="editJurnal" tabindex="-1"
 aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -234,7 +239,7 @@ name="keterangan" rows="3"> - </textarea>
  </div>
  <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary">Simpan</button>
       </div>
     </div>
   </div>
@@ -251,8 +256,12 @@ name="keterangan" rows="3"> - </textarea>
  <td>-</td>
  <td>
    <!-- Button trigger modal -->
-<i class="btn btn-bi bi-pencil-square text-success" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+   <a href="#editAkun" class="text-decoration-none" data-bstoggle="modal">
+<button type="button" class="btn btn-bi bi-pencil-square text-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+</button>
+<a href="" class="text-decoration-none">
 <i class="bi bi-trash text-danger"></i>
+</a>
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
