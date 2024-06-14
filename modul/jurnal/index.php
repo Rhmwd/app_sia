@@ -69,7 +69,7 @@ rows="3"></textarea>
  <table class="table table-striped">
  <thead>
  <tr>
- <th>#</th>
+ <th>No</th>
  <th>Invoice</th>
 <th>Jenis Invoice</th>
  <th>Tanggal</th>
