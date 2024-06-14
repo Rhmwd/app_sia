@@ -1,3 +1,4 @@
+<form action="modul/pembelian/aksi_pembelian.php?act=insert" method="post">
 <div class="card mb-3">
 <div class="card-body">
  <form action="" method="post">
