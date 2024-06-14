@@ -87,6 +87,7 @@
 <button type="button" class="btn btn-bi bi-pencil-square text-success" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
 <a href="" class="text-decoration-none">
  <i class="bi bi-trash text-danger"></i>
+      </a>
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -119,9 +120,13 @@
           <input type="number" class="form-control" name="stok">
         </div>
       </div>
-      <div class="col text-end">
-        <button class="btn btn-secondary" type="reset">Reset</button>
-        <button class="btn btn-primary" type="submit">Simpan</button>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Simpan</button>
+      </div>
+    </div>
+  </div>
+</div>
       </div>
     </form>
   </div>
@@ -137,6 +142,7 @@
 <button type="button" class="btn btn-bi bi-pencil-square text-success" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
 <a href="" class="text-decoration-none">
  <i class="bi bi-trash text-danger"></i>
+      </a>
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
