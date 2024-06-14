@@ -18,7 +18,7 @@ $_SESSION['pesan'] = "Data akun gagal ditambahkan";
  }
 }elseif($_GET['act']=="update"){
  $id = $_GET['id'];
- $query = "UPDATE tbl_akun SET
+ $query = "UPDATE tb_akun SET
 nama_akun='$nama_akun',jenis_akun='$jenis_akun',type_saldo='$type_saldo'
 WHERE id='$id'";
 $exec = mysqli_query($koneksi, $query);
