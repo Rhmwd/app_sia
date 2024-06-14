@@ -78,7 +78,7 @@
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>#</th>
+                        <th>No</th>
                         <th>Invoice</th>
                         <th>Tanggal</th>
                         <th>Nama Barang</th>
