@@ -84,10 +84,11 @@
  <td>Rp. 15.000.000,-</td>
  <td>Pembelian perlengkapan maintenance</td>
  <td>
-    <!-- Button trigger modal -->
-<button type="button" class="btn btn-bi bi-pencil-square text-success" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
+   <!-- Button trigger modal -->
+   <button type="button" class="btn btn-bi bi-pencil-square text-success" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
 <a href="" class="text-decoration-none">
  <i class="bi bi-trash text-danger"></i>
+</a>
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -97,7 +98,10 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <div class="row mb-3">
+      <div class="card mb-3">
+<div class="card-body">
+ <form action="" method="post">
+ <div class="row mb-3">
  <div class="col-md-4">
  <label for="invoice" class="form-label">Invoice</label>
  <input type="text" class="form-control" name="invoice">
@@ -142,75 +146,76 @@
  </div>
  <hr class="text-secondary">
  <div class="text-end">
- <button type="reset" class="btn btn-secondary">Reset</button>
- <button type="submit" class="btn btn-primary">Simpan</button>
- </div>
- </form>
- </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Simpan</button>
+      </div>
+    </div>
+  </div>
 </div>
  <!-- Modal -->
- <div class="modal fade" id="editPembelian" tabindex="-1" arialabelledby="exampleModalLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="editPembelian" tabindex="-1" arialabelledby="exampleModalLabel" aria-hidden="true">
     <form action="" method="post">
- <div class="modal-dialog modal-lg">
- <div class="modal-content">
- <div class="modal-header">
- <h1 class="modal-title fs-5"id="exampleModalLabel">Edit Data Pembelian</h1>
- <button type="button" class="btn-close" data-bsdismiss="modal" aria-label="Close"></button>
- </div>
- <div class="modal-body">
- <div class="row mb-3">
- <div class="col-md-4">
- <label for="invoice" class="formlabel">Invoice</label>
- <input type="text" class="form-control"name="invoice" value="BL110324" disabled>
- </div>
- <div class="col-md-4">
- <label for="tanggal" class="formlabel">Tanggal</label>
-<input type="date" class="form-control"name="tanggal" value="2024-11-03">
- </div>
- <div class="col-md-4">
- <label for="suplier" class="formlabel">Suplier</label>
- <select name="suplier" class="form-select">
- <option value="1" selected>PT Suplier Jaya</option>
- <option value="2">CV Maju Jaya</option>
- </select>
- </div>
- </div>
- <div class="row mb-3">
- <div class="col-md-4">
- <label for="jumlah" class="formlabel">Jumlah</label>
- <input type="number" class="form-control"name="jumlah" value="1">
- </div>
- <div class="col-md-4">
- <label for="harga" class="formlabel">Harga</label>
- <div class="input-group">
- <span class="input-group-text">Rp.</span>
- <input type="number" class="form-control"name="harga" value="15000000">
- </div>
- </div>
- <div class="col-md-4">
- <label for="total" class="formlabel">Total</label>
- <div class="input-group">
- <span class="input-group-text">Rp.</span>
- <input type="number" class="form-control"name="total" value="15000000" disabled>
- </div>
- </div>
- </div>
- <div class="row">
- <div class="col-md-12">
-<label for="keterangan" class="formlabel">Keterangan</label>
- <textarea name="keterangan" class="formcontrol">Pembelian perlengkapan maintenance</textarea>
- </div>
- </div>
- </div>
- <div class="modal-footer">
- <button type="button" class="btn btn-secondary"
-data-bs-dismiss="modal">Close</button>
- <button type="submit" class="btn btnprimary">Simpan</button>
- </div>
- </div>
- </div>
- </form>
- </div>
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5"id="exampleModalLabel">Edit Data Pembelian</h1>
+            <button type="button" class="btn-close" data-bsdismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row mb-3">
+              <div class="col-md-4">
+                <label for="invoice" class="formlabel">Invoice</label>
+                <input type="text" class="form-control"name="invoice" value="BL110324" disabled>
+              </div>
+              <div class="col-md-4">
+                <label for="tanggal" class="formlabel">Tanggal</label>
+                <input type="date" class="form-control"name="tanggal" value="2024-11-03">
+              </div>
+              <div class="col-md-4">
+                <label for="suplier" class="formlabel">Suplier</label>
+                <select name="suplier" class="form-select">
+                  <option value="1">PT Suplier Jaya</option>
+                  <option value="2">CV Maju Jaya</option>
+                </select>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-4">
+                <label for="jumlah" class="formlabel">Jumlah</label>
+                <input type="number" class="form-control"name="jumlah" value="1">
+              </div>
+              <div class="col-md-4">
+                <label for="harga" class="formlabel">Harga</label>
+                <div class="input-group">
+                  <span class="input-group-text">Rp.</span>
+                  <input type="number" class="form-control"name="harga" value="15000000">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="total" class="formlabel">Total</label>
+              <div class="input-group">
+                <span class="input-group-text">Rp.</span>
+                <input type="number" class="form-control"name="total" value="15000000" disabled>
+              </div>
+            </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <label for="keterangan" class="formlabel">Keterangan</label>
+                <textarea name="keterangan" class="formcontrol">Pembelian perlengkapan maintenance</textarea>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Simpan</button>
+          </div>
+        </div>
+      </div>
+    </form>
+</div> -->
  </tr>
  <tr>
  <td>2</td>
@@ -222,20 +227,24 @@ data-bs-dismiss="modal">Close</button>
  <td>Rp. 50.000.000,-</td>
  <td>Pengadaan 5 unit laptop ASUS</td>
  <td>
-   <!-- Button trigger modal -->
-<button type="button" class="btn btn-bi bi-pencil-square text-success" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-bi bi-pencil-square text-success" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
 <a href="" class="text-decoration-none">
  <i class="bi bi-trash text-danger"></i>
+</a>
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Data Pembelian</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <div class="row mb-3">
+      <div class="card mb-3">
+<div class="card-body">
+ <form action="" method="post">
+ <div class="row mb-3">
  <div class="col-md-4">
  <label for="invoice" class="form-label">Invoice</label>
  <input type="text" class="form-control" name="invoice">
@@ -280,16 +289,16 @@ data-bs-dismiss="modal">Close</button>
  </div>
  <hr class="text-secondary">
  <div class="text-end">
- <button type="reset" class="btn btn-secondary">Reset</button>
- <button type="submit" class="btn btn-primary">Simpan</button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Simpan</button>
+      </div>
+    </div>
+  </div>
+</div>
  </div>
  </form>
- </div>
- </a>
+ </div> 
  </td>
  </tr>
- </tbody>
- </table>
- </div>
- </div>
- </div>
