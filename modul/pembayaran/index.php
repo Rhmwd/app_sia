@@ -58,10 +58,12 @@
  <td>Rp. 1.000.000,-</td>
  <td>Pembayaran tagihan indihome</td>
  <td>
-    <!-- Button trigger modal -->
-<button type="button" class="btn btn-bi bi-pencil-square text-success" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
+   <!-- Button trigger modal -->
+   <button type="button" class="btn btn-bi bi-pencil-square text-success" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
 <a href="" class="text-decoration-none">
  <i class="bi bi-trash text-danger"></i>
+</a>
+
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -71,7 +73,10 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <div class="row mb-3">
+      <div class="card mb-3">
+<div class="card-body">
+ <form action="" method="post">
+ <div class="row mb-3">
  <div class="col-md-6">
  <label for="invoice" class="form-label">Invoice</label>
  <input type="text" class="form-control" name="invoice">
@@ -96,11 +101,14 @@
  </div>
  <hr class="text-secondary">
  <div class="text-end">
- <button type="reset" class="btn btn-secondary">Reset</button>
- <button type="submit" class="btn btn-primary">Simpan</button>
- </div>
- </form>
- </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Simpan</button>
+      </div>
+    </div>
+  </div>
+</div>
 
  <!-- Modal -->
  <div class="modal fade" id="editPembayaran" tabindex="-1" arialabelledby="exampleModalLabel" aria-hidden="true">
@@ -155,10 +163,12 @@ data-bs-dismiss="modal">Close</button>
  <td>Rp. 900.000,-</td>
  <td>Pembayaran tagihan listrik</td>
  <td>
-   <!-- Button trigger modal -->
-<button type="button" class="btn btn-bi bi-pencil-square text-success" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-bi bi-pencil-square text-success" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
 <a href="" class="text-decoration-none">
  <i class="bi bi-trash text-danger"></i>
+</a>
+
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -168,7 +178,10 @@ data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <div class="row mb-3">
+      <div class="card mb-3">
+<div class="card-body">
+ <form action="" method="post">
+ <div class="row mb-3">
  <div class="col-md-6">
  <label for="invoice" class="form-label">Invoice</label>
  <input type="text" class="form-control" name="invoice">
@@ -193,18 +206,14 @@ data-bs-dismiss="modal">Close</button>
  </div>
  <hr class="text-secondary">
  <div class="text-end">
- <div class="row">
- <div class="d-flex">
- <span class="me-auto text-gray">
- <?php
- if(isset($_SESSION['pesan'])){
- echo $_SESSION['pesan'];
- unset($_SESSION['pesan']);
- }
- ?>
- </span>
- <button type="reset" class="btn btn-secondary">Reset</button>
- <button type="submit" name="submit" class="btn btnprimary">Simpan</button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Simpan</button>
+      </div>
+    </div>
+  </div>
+</div>
  </div>
  </form>
  </div>
